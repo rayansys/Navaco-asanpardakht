@@ -1,0 +1,71 @@
+@import "../libs/bootstrap/css/bootstrap.min.css";
+@import "fonts.css";
+
+html {
+    direction: rtl;
+}
+
+body {
+    font-family: IRANSansWeb, Shabnam, sans-serif !important;
+    background-color: #f9f9f9;
+	font-size:13px !important;
+}
+
+input {
+	padding:16px !important;
+    font-family: IRANSansWeb, Shabnam, sans-serif !important;
+    font-size:13px !important;
+}
+
+.dropdown-item {
+	padding:12px !important;
+    font-family: IRANSansWeb, Shabnam, sans-serif !important;
+    font-size:13px !important;
+}
+
+#amount {
+	direction:ltr !important;
+}
+
+.btn, button {
+	padding:12px !important;
+    font-family: IRANSansWeb, Shabnam, sans-serif !important;
+    font-size:13px !important;
+}
+
+.badge {
+	padding:4px !important;
+    font-family: IRANSansWeb, Shabnam, sans-serif !important;
+    font-weight:normal !important;
+    font-size:9px !important;
+}
+
+h4 {
+	font-size:18px !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	direction:rtl !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	direction:rtl !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	direction:rtl !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+	direction:rtl !important;
+}
+
+.ltr{
+    direction: ltr;
+    text-align: left;
+}
+
+.table td, .table th {
+    vertical-align: middle
+}
+
+.card-header .btn {
+    padding: .05rem .5rem;
+}

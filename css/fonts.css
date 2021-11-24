@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('../fonts/iransansweb/IRANSansWeb.eot');
+    src: url('../fonts/iransansweb/IRANSansWeb.eot?#iefix') format('embedded-opentype'), url('../fonts/iransansweb/IRANSansWeb.woff') format('woff'), url('../fonts/iransansweb/IRANSansWeb.ttf') format('truetype'), url('../fonts/iransansweb/IRANSansWeb.svg#ibik') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../fonts/vazir/Vazir.eot');
+    src: url('../fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/vazir/Vazir.woff2') format('woff2'),
+    url('../fonts/vazir/Vazir.woff') format('woff'),
+    url('../fonts/vazir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('../fonts/shabnam/Shabnam.eot');
+    src: url('../fonts/shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/shabnam/Shabnam.woff2') format('woff2'),
+    url('../fonts/shabnam/Shabnam.woff') format('woff'),
+    url('../fonts/shabnam/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
