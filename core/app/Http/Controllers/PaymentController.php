@@ -26,7 +26,7 @@ class PaymentController extends Controller
 
         try {
             DB::beginTransaction();
-            $transaction = Transaction::lockForUpdate()->find($request->PaymentID);
+            $transaction = Transaction::lockForUpdate()->find($data->PaymentID);
             if ($transaction)
 			{
                 if ($transaction->status && $transaction->verified)
