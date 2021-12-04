@@ -3,7 +3,7 @@ namespace App\PaymentProviders\PSP;
 
 class Payment
 {
-    private $url = "https://fcp.shaparak.ir/nvcservice/Api/v2/";
+    private $url = "http://79.174.161.132:8181/nvcservice/Api/v2/";
     protected $apiKey;
     protected $username;
     protected $password;
