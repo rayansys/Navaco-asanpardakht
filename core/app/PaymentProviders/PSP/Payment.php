@@ -53,9 +53,7 @@ class Payment
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_POST, 1);
         curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-Type: application/json", "Accept: application/json"));
-
 		$curl_exec = curl_exec($curl);
-
 		curl_close($curl);
 
 		$result = json_decode($curl_exec, true);
@@ -68,15 +66,18 @@ class Payment
 			$this->paymentUrl 	= $result['RedirectUrl'];
 		} else {
 			if (isset($result['ActionCode'])) {
-				$this->errorCode = $result['Status'];
+				$this->errorCode = $result['ActionCode'];
 			}
 
-			if (isset($result['Status'])) {
-				$this->errorMessage = $result['Status'];
+			if (isset($result['ActionCode'])) {
+				$this->errorMessage = $result['ActionCode'];
+			}
+			if ($result === null) {
+				$this->errorMessage = $curl_exec;
+				$this->errorCode = 500;
 			}
 		}
-
-        return $result;
+        return $this;
     }
 
     /**
